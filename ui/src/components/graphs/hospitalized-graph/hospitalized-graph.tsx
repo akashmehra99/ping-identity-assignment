@@ -30,7 +30,7 @@ export const HospitalizedGraph: FC<HospitalizedGraphPropsType> = ({ data }) => {
       </Heading>
       <AreaChart
         width={800}
-        height={360}
+        height={460}
         data={data}
         margin={{ top: 10, right: 30, left: 0, bottom: 5 }}
       >
@@ -61,9 +61,10 @@ export const HospitalizedGraph: FC<HospitalizedGraphPropsType> = ({ data }) => {
           </linearGradient>
         </defs>
         <XAxis
+          height={100}
           angle={-30}
+          tickMargin={12}
           dataKey="dateChecked"
-          tickFormatter={(value) => new Date(value).toLocaleDateString()}
         ></XAxis>
         <YAxis />
         <CartesianGrid strokeDasharray="3 3" />

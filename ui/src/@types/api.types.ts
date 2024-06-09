@@ -48,7 +48,7 @@ export interface StatesCurrentApiType {
   death: number;
   hospitalized: number | null;
   hospitalizedDischarged: number | null;
-  dateChecked: Date | null;
+  dateChecked: Date | null | string;
   totalTestsViral: number | null;
   positiveTestsViral: number | null;
   negativeTestsViral: number | null;

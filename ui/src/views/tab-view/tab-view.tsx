@@ -14,13 +14,13 @@ import { StateView } from "../state-view/state-view";
 export const TabView: FC = () => {
   return (
     <Box
-      width="100vw"
+      width="98vw"
       display="flex"
       justifyContent={"center"}
       alignItems={"center"}
       alignContent={"center"}
     >
-      <Card width={"95vw"} mt={"2em"} minH={"90vh"}>
+      <Card width={"90vw"} mt={"2em"} minH={"90vh"}>
         <Tabs isLazy isFitted variant="enclosed" padding={"2em"}>
           <TabList mb="1em">
             <Tab>Country</Tab>
